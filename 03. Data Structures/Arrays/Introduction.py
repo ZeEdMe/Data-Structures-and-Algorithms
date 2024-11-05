@@ -37,7 +37,7 @@ def selectionSort(lst):
         currentMin = min(lst[i : ])
         currentMinIndex = i + lst[i: ].index(currentMin)
         
-        # Swap lst[i] with lst[currentMinIndex] if necessary
+        # Swap lst[i] with lst[currentMinIndex] elif necessary
         if currentMinIndex != i:
             lst[currentMinIndex], lst[i] = lst[i], currentMin
 def twoDimentionList():
@@ -183,14 +183,14 @@ list2 = [1, 3, 7]
 if x==1:
     list3 = list1 + list2
     print(list3)
-if x==2:
+elif x==2:
     list3 = 2 * list2
     print(list3)
-if x==3:
+elif x==3:
     list3 = list1 + list2
     print(list3)
     print(list3[2:4])
-if x==4:
+elif x==4:
     list3 = 5* list1
     print(list3)
     print(list3[-3])
@@ -200,12 +200,12 @@ if x==4:
     print('C' in languages)    # False
     print('Python' in languages)    # True
 
-if x==5:
+elif x==5:
     list3 = [21, 34, 54, 12]
     print("Before Append:", list3)
     list3.append(32)
     print("After Append:", list3)
-if x==6:
+elif x==6:
     list1 = [2, 4, 6]
     list2 = [1, 3, 7]
     list3 = list1 + list2
@@ -219,34 +219,34 @@ if x==6:
     list1=list3
     print("List 1 After copy.... ", list1)
 
-if x==7:
+elif x==7:
     items = "Welcome to the SCME".split() 
     print(items)
     items = "34#13#78#45".split("#")
     print(items)
-if x==8:
+elif x==8:
     # reverse the order of list elements
     list3 = [2, 3, 5, 7]
     list3.reverse()
     print('Reversed List:', list3)
-if x==9:
+elif x==9:
     ListAppend()
-if x==10:
+elif x==10:
     str= input("add text to search text: ")
     c = input("add character to search count within the text you add: ")
     print(count(str, c))
-if x==11:
+elif x==11:
     input_list = input('Enter elements of a list separated by space \n')
     user_list = input_list.split()
     selectionSort(user_list)
     print (user_list) 
-if x==12:
+elif x==12:
     twoDimentionList()
-if x==13:
+elif x==13:
     ReadTableDatak()
-if x==14:
+elif x==14:
     SumTable()
-if x==15:
+elif x==15:
     QuizSystem()
 else:
     print("Error! Try Again....")
