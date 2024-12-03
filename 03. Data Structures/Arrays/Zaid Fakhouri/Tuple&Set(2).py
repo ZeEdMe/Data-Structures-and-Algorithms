@@ -1,24 +1,24 @@
-# S1 = ("Ahmad","Zeed","Abd")
+# T1 = ("Ahmad","Zeed","Abd")
 
-# S2 = (5.5,94,0)
+T2 = (5.5,94,0)
 
-# S3 = tuple([5 * x for x in range(0,5)])
+# T3 = tuple([5 * x for x in range(0,5)])
 
-# print(S3)
+# print(T3)
 
-# # S3[0] = 1
+# # T3[0] = 1
 
-# # print(S3)
+# # print(T3)
 
-# S4 = tuple("ZEED")
+# T4 = tuple("ZEED")
 
-# print(S4)
+# print(T4)
 
-# S5 = S1+S2+S3
+# T5 = T1+T2+T3
 
-# print(S5)
+# print(T5)
 
-S1 = {"Ahmad","Zeed","Abd"}
+S1 = {"Ahmad","Zeed","Abd","Onion"}
 
 print(S1)
 
@@ -26,7 +26,7 @@ S2 = set([2 * x for x in range(0,5)])
 
 print(S2)
 
-S3 = set([5 * x for x in range(0,10)])
+S3 = set([2 * x for x in range(0,10)])
 
 print(S3)
 
@@ -38,8 +38,10 @@ S4 = set("ZEED")
 
 print(S4)
 
-S5 = S3 or S2 or S1
-
-print(S5)
-
 print(sum(S3))
+
+print(S2.issubset(S3))
+
+print(S2.union(S1))
+
+print(S2.intersection(T2))
